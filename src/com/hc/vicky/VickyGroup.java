@@ -15,7 +15,7 @@ public class VickyGroup implements TrueWord {
 		Student_vicky stu2 = new Student_vicky("Lily","You are so beautiful!");
 		Student_vicky stu3 = new Student_vicky("Lancy","I'm so hangry!");
 		Student_vicky stu4 = new Student_vicky("Yase","You are so stupid!");
-		Student_vicky stu5 = new Student_vicky("Bill","first blood!");
+		Student_vicky stu5 = new Student_vicky("Bill","first blood lalala!");
 		stus.add(stu1);
 		stus.add(stu2);
 		stus.add(stu3);
