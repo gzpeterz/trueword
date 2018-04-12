@@ -5,6 +5,7 @@ import com.hc.impl.HXGroup;
 =======
 import java.util.Scanner;
 
+import com.hc.impl.LzGroup;
 import com.hc.impl.PeterGroup;
 >>>>>>> c7d06300fb0cb72cc16619674252f0a9fc907284
 
@@ -15,6 +16,7 @@ public class Test {
 <<<<<<< HEAD
 =======
 		TrueWord peter = new PeterGroup();
+		TrueWord lz = new LzGroup();
 		Scanner scanner = new Scanner(System.in);
 
 //
@@ -37,6 +39,10 @@ public class Test {
 				word = peter.getTrueWord(name);
 				break;
 			case 2:
+				name = lz.getName();
+				System.out.print("同学名字： " + name);
+				scanner.next();
+				word = lz.getTrueWord(name);
 				break;
 			case 3:
 				break;
