@@ -11,10 +11,10 @@ public class LzGroup implements TrueWord {
 	public LzGroup(){
 		names=new String[5];
 		for (int i = 0; i < names.length; i++) {
-			names[i]="天地"+i+"号";
+			names[i]="天地"+(i+1)+"号";
 		}
 	}
-
+	
 	@Override
 	public String getName() {
 		return names[new Random().nextInt(5)];
@@ -29,7 +29,7 @@ public class LzGroup implements TrueWord {
 				break;
 			}
 		}
-		return "我是天下第"+index+"吃货";
+		return "我是第"+(index+1)+"吃货";
 	}
 
 }
