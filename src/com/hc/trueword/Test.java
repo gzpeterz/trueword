@@ -5,6 +5,7 @@ import java.util.Scanner;
 import com.hc.impl.HXGroup;
 import com.hc.impl.LzGroup;
 import com.hc.impl.PeterGroup;
+import com.hc.vicky.VickyGroup;
 
 public class Test {
 
@@ -14,6 +15,7 @@ public class Test {
 		TrueWord peter = new PeterGroup();
 		TrueWord lz = new LzGroup();
 		TrueWord hz = new HXGroup();
+		TrueWord vicky = new VickyGroup();
 		Scanner scanner = new Scanner(System.in);
 
 //
@@ -30,11 +32,6 @@ public class Test {
 
 			switch (random) {
 			case 1:
-				name = peter.getName();
-				System.out.print("同学名字： " + name);
-				scanner.next();
-				word = peter.getTrueWord(name);
-				break;
 			case 2:
 				name = lz.getName();
 				System.out.print("同学名字： " + name);
@@ -48,6 +45,10 @@ public class Test {
 				word = hz.getTrueWord(name);
 				break;
 			case 4:
+				name = vicky.getName();
+				System.out.print("同学名字： " + name);
+				scanner.next();
+				word = vicky.getTrueWord(name);
 				break;
 			default:
 				break;
