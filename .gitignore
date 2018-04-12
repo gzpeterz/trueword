@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 build/
 *.class
 *.jar
+=======
+>>>>>>> c7d06300fb0cb72cc16619674252f0a9fc907284
 /bin/
