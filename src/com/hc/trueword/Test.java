@@ -1,12 +1,16 @@
 package com.hc.trueword;
 
+
 import java.util.Scanner;
 
 import com.hc.impl.PeterGroup;
 
+import com.hc.vicky.VickyGroup;
+
 public class Test {
 
 	public static void main(String[] args) {
+
 		
 		TrueWord peter = new PeterGroup();
 		Scanner scanner = new Scanner(System.in);
@@ -43,7 +47,6 @@ public class Test {
 			
 			if ( i > 20) { break; }
 		}
-
 	}
 
 }
