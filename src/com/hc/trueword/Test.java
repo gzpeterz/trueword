@@ -2,6 +2,7 @@ package com.hc.trueword;
 
 import java.util.Scanner;
 
+import com.hc.impl.LzGroup;
 import com.hc.impl.PeterGroup;
 
 public class Test {
@@ -9,6 +10,7 @@ public class Test {
 	public static void main(String[] args) {
 		
 		TrueWord peter = new PeterGroup();
+		TrueWord lz = new LzGroup();
 		Scanner scanner = new Scanner(System.in);
 
 //
@@ -31,6 +33,10 @@ public class Test {
 				word = peter.getTrueWord(name);
 				break;
 			case 2:
+				name = lz.getName();
+				System.out.print("同学名字： " + name);
+				scanner.next();
+				word = lz.getTrueWord(name);
 				break;
 			case 3:
 				break;
