@@ -1,29 +1,19 @@
 package com.hc.trueword;
 
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-import com.hc.impl.HXGroup;
-=======
->>>>>>> 85f09f553725ec4f67df7e13fe4df386795fa3f2
 import java.util.Scanner;
 
+import com.hc.impl.HXGroup;
 import com.hc.impl.LzGroup;
 import com.hc.impl.PeterGroup;
->>>>>>> c7d06300fb0cb72cc16619674252f0a9fc907284
-
-import com.hc.vicky.VickyGroup;
 
 public class Test {
 
 	public static void main(String[] args) {
 
 		
-<<<<<<< HEAD
-=======
 		TrueWord peter = new PeterGroup();
 		TrueWord lz = new LzGroup();
+		TrueWord hz = new HXGroup();
 		Scanner scanner = new Scanner(System.in);
 
 //
@@ -52,6 +42,10 @@ public class Test {
 				word = lz.getTrueWord(name);
 				break;
 			case 3:
+				name = hz.getName();
+				System.out.print("同学名字： " + name);
+				scanner.next();
+				word = hz.getTrueWord(name);
 				break;
 			case 4:
 				break;
@@ -62,11 +56,5 @@ public class Test {
 			
 			if ( i > 20) { break; }
 		}
-
-
-
-
-
 	}
-
 }
